@@ -39,9 +39,9 @@ local_css(custom_css)
 
 # --- Sidebar ---
 st.sidebar.markdown("### Mon Compte")
-st.sidebar.image("assets/logo_D4G.png", width=120)
+st.sidebar.image("assets/logo_D4G.png", width=80)
 st.sidebar.markdown("---")
-menu = ["Nouveau formulaire", "Bibliothèque", "Guide d'utilisation"]
+menu = ["Nouveau formulaire", "Ma bibliothèque", "Guide d'utilisation"]
 for item in menu:
     st.sidebar.button(item)
 

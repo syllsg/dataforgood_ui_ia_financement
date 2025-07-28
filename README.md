@@ -1,4 +1,5 @@
 
+Pour le style, j'ai choisi d'utiliser les stylable_container qui évite d'autoriser l'injection d'html. Fonctionne pour beaucoup d'éléments excepté les link_button car pas d'attributs key
 
 
 #doc config.toml

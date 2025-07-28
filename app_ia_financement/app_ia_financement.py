@@ -1,7 +1,30 @@
 import streamlit as st
+import pathlib
 from streamlit_extras.stylable_container import stylable_container
 
 # Font definition and global config is in the config.toml file
+
+# --- CSS styling ---
+
+def load_css(file_path):
+    with open(file_path) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# Load custom CSS
+css_path = pathlib.Path("styles.css")
+load_css(css_path)
+
+# --- Sidebar ---
+st.sidebar.title("Mon Compte")
+st.sidebar.image("img/logo_D4G_no_text.png", width=120)
+st.sidebar.markdown("---")
+
+
+# buttons sidebar
+menu = ["📝 Nouveau formulaire", "📚 Bibliothèque", "ⓘ Guide d'utilisation"]
+menu_keys = ["formulaire", "biblio", "guide"]
+for item, key in zip(menu, menu_keys):
+    st.sidebar.button(item, key=key)    
+
 
 # --- Main header ---
 st.title("DossierIA+")
