@@ -13,3 +13,9 @@ wheels/
 # API keys
 .env
 secrets.toml
+
+
+#folders
+data
+maquette_sos_template
+dataforgoodfr 13_ia_financement aghiles maquette_v2
