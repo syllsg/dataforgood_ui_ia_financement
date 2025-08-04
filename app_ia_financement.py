@@ -20,7 +20,7 @@ st.sidebar.markdown("---")
 
 
 # buttons menu sidebar
-menu = ["📝 Nouveau formulaire", "📚 Ma bibliothèque", "ⓘ Guide d'utilisation"]
+menu = [":material/edit_document: Nouveau formulaire", ":material/newsstand: Ma bibliothèque", ":material/info: Guide d'utilisation"]
 menu_keys = ["formulaire", "biblio", "guide"]
 for item, key in zip(menu, menu_keys):
     st.sidebar.button(item, key=key)    
@@ -127,4 +127,8 @@ with st.container(key='template_container'):
 
 
 # --- Donate link button ---
-st.link_button("Faire un don", "https://www.groupe-sos.org/faire-un-don/")
+#st.link_button("Faire un don", "https://www.groupe-sos.org/faire-un-don/")
+
+st.html('<a class="donate_link" ' \
+'href="https://www.groupe-sos.org/faire-un-don/">Faire un don ➚</a> ')
+

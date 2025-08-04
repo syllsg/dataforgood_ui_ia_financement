@@ -8,15 +8,22 @@ https://github.com/dataforgoodfr/13_ia_financement
 Une maquette a été désignée par notre association partenaire et ici est déployée une application streamlit qui reproduit uniquement le "front" de la future application. Les boutons ne renvoient nulle part et c'est normal, il s'agit de s'assurer de la conformité du design de l'application avant de l'intégrer à la solution développée dans le repo cité plus haut. La maquette est déployée à cette adresse : 
 https://dataforgood13uiiafinancement.streamlit.app/
 
-Pour modifier le style de base de streamlit, j'ai choisi d'utiliser un ficher css contenant les infos de style et de tagger les éléments avec une key pour modifier leur style. Celà fonctionne pour beaucoup d'éléments excepté les link_button qui ne possèdent pas d'attributs key.
+Pour modifier le style de base de streamlit, j'ai choisi d'utiliser un ficher css contenant les infos de style et de tagger les éléments avec une key pour modifier leur style. Celà fonctionne pour beaucoup d'éléments excepté les link_button qui ne possèdent pas d'attributs key.<br>
+Liens et docs consultés qui m'ont inspirés: 
+[Style Your Streamlit App with Custom CSS](https://www.youtube.com/watch?v=jbJpAdGlKVY) <br>
+[Streamlit doc](https://docs.streamlit.io/) <br>
+[Streamlit doc: Deploy your app in streamlit community](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy) <br>
+[List of CSS properties](https://www.w3schools.com/CSSref/index.php) <br>
+[Free font icons](https://coolsymbol.com/) <br>
+[Material google font icons. Easy insertion, ex.: ":material/icon-name:"](https://fonts.google.com/icons) <br>
 
-Pour lancer l'appli en local en cli :
+
+Pour lancer l'appli en local en CLI:
 Utiliser UV pour installer les dépendances avec `uv sync`
 
 Puis dans le root folder : <br>
 `source .venv/bin/activate` <br>
 `streamlit run app_ia_financement.py`
-
 
 
 

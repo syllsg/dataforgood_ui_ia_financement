@@ -16,6 +16,7 @@
     border-color:black;
     border-radius: 25rem;
     margin-top: 2rem;
+    font-weight: bold;
 }
 
 .st-key-btn_proj_lib button, .st-key-btn_assoc_lib button {
@@ -37,4 +38,15 @@
     margin-top: 2rem;
     margin-left: 78%;
     border-color:black;
+}
+
+.donate_link{
+    padding: 10px 20px;
+    margin-top: 1rem;
+    background-color: #E5E5E5; 
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    float: right;
 }
