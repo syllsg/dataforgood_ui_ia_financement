@@ -25,16 +25,11 @@ menu_keys = ["formulaire", "biblio", "guide"]
 for item, key in zip(menu, menu_keys):
     st.sidebar.button(item, key=key)    
 
-# buttons sidebar - à propos
-st.sidebar.button("ⓘ À propos", key="about") 
-st.sidebar.image("img/github_logo.png", width=50)
-
-
 # --- Main header ---
 st.title("DossierIA+")
 st.header("Facilitez vos réponses aux demandes de subventions")
 st.write("""DossierIA+ pré-remplit automatiquement vos formulaires à partir de vos documents sources. **En quelques clics, votre dossier est prêt !**  
-         Vous gardez le contrôle pour les ajuster facilement, tout en gagnant un temps précieux. Conçue par et pour les associations, cette solution vous aide à maximiser l’impact de vos actions en vous permettant de vous concentrer sur l’essentiel.""")
+         Vous gardez le contrôle pour les ajuster facilement, tout en gagnant un temps précieux. Conçue par des bénévoles de Data For Good avec les associations du groupe SOS pour les associations, cette solution vous aide à maximiser l’impact de vos actions en vous permettant de vous concentrer sur l’essentiel.""")
 st.divider() 
 
 # --- 1st step Project uploading documents ---
@@ -76,7 +71,7 @@ with col2:
 st.subheader("Votre association")
 
 # Drag and drop multiple files
-uploaded_asso_files = st.file_uploader("**Chargez les documents présentant votre association** (présentation institutionnelle, statuts, rapports d’activité, etc.)) ", 
+uploaded_asso_files = st.file_uploader("**Chargez les documents présentant votre association** (présentation institutionnelle, statuts, rapports d’activité, etc.) ", 
     accept_multiple_files=True, type=['pdf', 'docx', 'csv'], key='assoc')
 if uploaded_asso_files is not None:
     for uploaded_file in uploaded_asso_files:
@@ -113,7 +108,7 @@ with st.container(key='template_container'):
         for uploaded_file in response_files:
             st.write(f"Fichier {uploaded_file.name} importé avec succès.")
     
-    response_text = st.text_input("**Ou posez une question manuellement ou à l'oral**", placeholder="Ex : Qui sont les bénéficiaires du projet ?", key='response_text')
+    response_text = st.text_input("**Ou posez une question manuellement**", placeholder="Ex : Qui sont les bénéficiaires du projet ?", key='response_text')
 
     with st.expander("Paramètres"):
         st.slider("Niveau de détail", 1, 5, 3, key='detail_level')
@@ -126,9 +121,9 @@ with st.container(key='template_container'):
 
 
 
-# --- Donate link button ---
-#st.link_button("Faire un don", "https://www.groupe-sos.org/faire-un-don/")
-
-st.html('<a class="donate_link" ' \
-'href="https://www.groupe-sos.org/faire-un-don/">Faire un don ➚</a> ')
-
+# --- Donate and github link buttons ---
+col1, col2 = st.columns(2)
+with col1:
+    st.html('<a class="github_link" href="https://github.com/dataforgoodfr/13_ia_financement/" target="_blank">ⓘ À propos de DossierIA+</a>')
+with col2:
+    st.html('<a class="donate_link" href="https://www.groupe-sos.org/" target="_blank">Faire un don ➚</a> ')
