@@ -13,17 +13,18 @@ css_path = pathlib.Path("styles.css")
 load_css(css_path)
 
 
+# --- Multi pages config ---
+st.set_page_config(
+    page_title="DossierIA+",
+    page_icon=":clipboard:",
+    layout="wide",
+    initial_sidebar_state="auto",
+)
+
 # --- Sidebar ---
 st.sidebar.title("Mon Compte")
 st.sidebar.image("img/logo_D4G_no_text_back.png", width=100)
-st.sidebar.markdown("---")
-
-
-# buttons menu sidebar
-menu = [":material/edit_document: Nouveau formulaire", ":material/newsstand: Ma bibliothèque", ":material/info: Guide d'utilisation"]
-menu_keys = ["formulaire", "biblio", "guide"]
-for item, key in zip(menu, menu_keys):
-    st.sidebar.button(item, key=key)    
+st.sidebar.markdown("**Bienvenue dans DossierIA+ !**")
 
 # --- Main header ---
 st.title("DossierIA+")
