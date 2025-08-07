@@ -9,7 +9,7 @@ Une maquette a été désignée par notre association partenaire et ici est dép
 https://dataforgood13uiiafinancement.streamlit.app/
 
 Pour modifier le style de base de streamlit, j'ai choisi d'utiliser un ficher css contenant les infos de style et de tagger les éléments avec une key pour modifier leur style. Celà fonctionne pour beaucoup d'éléments excepté les link_button qui ne possèdent pas d'attributs key.<br>
-Liens et docs consultés qui m'ont inspirés: 
+Liens et docs consultés qui m'ont inspirés: <br>
 [Style Your Streamlit App with Custom CSS](https://www.youtube.com/watch?v=jbJpAdGlKVY) <br>
 [Streamlit doc](https://docs.streamlit.io/) <br>
 [Streamlit doc: Deploy your app in streamlit community](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy) <br>
@@ -23,7 +23,7 @@ Utiliser UV pour installer les dépendances avec `uv sync`
 
 Puis dans le root folder : <br>
 `source .venv/bin/activate` <br>
-`streamlit run app_ia_financement.py`
+`streamlit run app.py`
 
 
 

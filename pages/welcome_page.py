@@ -103,8 +103,8 @@ st.divider()
 # --- 2nd step Project proposal template ---
 st.header("Etape 2 - Sélectionnez le formulaire à compléter")
 with st.container(key='template_container'):
-    response_files = st.file_uploader("**Chargez le formulaire à remplir** (format PDF, DOCX ou CSV)",  
-                                     accept_multiple_files=True, type=['pdf', 'docx', 'csv'], key='response_template')
+    response_files = st.file_uploader("**Chargez le formulaire à remplir** (format DOCX)",  
+                                     accept_multiple_files=True, type='docx', key='response_template')
     if response_files is not None:
         for uploaded_file in response_files:
             st.write(f"Fichier {uploaded_file.name} importé avec succès.")
@@ -112,7 +112,7 @@ with st.container(key='template_container'):
     response_text = st.text_input("**Ou posez une question manuellement**", placeholder="Ex : Qui sont les bénéficiaires du projet ?", key='response_text')
 
     with st.expander("Paramètres"):
-        st.slider("Niveau de détail", 1, 5, 3, key='detail_level')
+        st.slider("Niveau de détail (réponse simple à détaillée)", 1, 5, 3, key='detail_level')
 
     if st.button("Lancer la réponse", key='btn_response'):
         if response_files or response_text:
@@ -127,4 +127,4 @@ col1, col2 = st.columns(2)
 with col1:
     st.html('<a class="github_link" href="https://github.com/dataforgoodfr/13_ia_financement/" target="_blank">ⓘ À propos de DossierIA+</a>')
 with col2:
-    st.html('<a class="donate_link" href="https://www.groupe-sos.org/" target="_blank">Faire un don ➚</a> ')
+    st.html('<a class="donate_link" href="https://dataforgood.fr/docs/donation/" target="_blank">Faire un don ➚</a> ')
