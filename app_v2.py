@@ -2,7 +2,7 @@ import streamlit as st
 
 # Define the pages
 main_page = st.Page(
-    "pages/welcome_page.py", title="Nouveau formulaire", icon=":material/edit_document:")
+    "pages/homepage.py", title="Nouveau formulaire", icon=":material/edit_document:")
 
 ma_bibliotheque = st.Page(
     "pages/my_library.py", title="Ma bibliothèque", icon=":material/newsstand:")
