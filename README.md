@@ -23,7 +23,7 @@ Utiliser UV pour installer les dépendances avec `uv sync`
 
 Puis dans le root folder : <br>
 `source .venv/bin/activate` <br>
-`streamlit run app.py`
+`streamlit run app_v2.py`
 
 
 
