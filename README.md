@@ -5,7 +5,7 @@ Open source et accessible à toutes les associations dans le besoin, la solution
 Le projet est sur ce repo : <br>
 https://github.com/dataforgoodfr/13_ia_financement
 
-Une maquette a été désignée par notre association partenaire et ici j'ai déployée une application streamlit qui reproduit uniquement le "front" de la future application. L'application ne va pas remplir ni sauvegarder les fichiers uploadés et c'est normal, il s'agit de s'assurer de la conformité du design de l'application avant de l'intégrer à la solution développée dans le repo cité plus haut. La maquette est déployée à cette adresse sur le cloud streamlit : 
+Une maquette a été désignée par notre association partenaire et ici j'ai déployée une application streamlit qui reproduit uniquement le "front" de la future application. L'application ne va pas remplir ni sauvegarder les fichiers uploadés et c'est normal, il s'agit de s'assurer de la conformité du design de l'application avant de l'intégrer à la solution précédemment développée dans le repo cité plus haut. La maquette est déployée à cette adresse sur le cloud streamlit : 
 https://dataforgood13uiiafinancement.streamlit.app/
 
 Pour modifier le style de base de streamlit, j'ai choisi d'utiliser un ficher css contenant les infos de style et de tagger les éléments avec une key pour modifier leur style. Celà fonctionne pour beaucoup d'éléments excepté les link_button qui ne possèdent pas d'attributs key.<br>
@@ -25,7 +25,7 @@ Puis dans le root folder : <br>
 `source .venv/bin/activate` <br>
 `streamlit run app_v2.py`
 
-
+Pour voir l'intégration de cette version 2 à l'application existante : [Ma branche sur le répo github](https://github.com/dataforgoodfr/13_ia_financement/tree/sylvia)
 
 
 
