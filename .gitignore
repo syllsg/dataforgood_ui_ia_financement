@@ -16,6 +16,6 @@ secrets.toml
 
 
 #folders
-data
-maquette_sos_template
-dataforgoodfr 13_ia_financement aghiles maquette_v2
+data/
+maquette_sos_template/
+dataforgoodfr 13_ia_financement aghiles maquette_v2/
